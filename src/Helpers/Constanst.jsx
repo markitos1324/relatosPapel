@@ -1,0 +1,3 @@
+export const TYPE_CAR_MODIFY_ADD = "ADD";
+export const TYPE_CAR_MODIFY_REMOVE = "REMOVE";
+export const TYPE_CAR_MODIFY_UPDATE = "UPDATE";

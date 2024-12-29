@@ -1,0 +1,196 @@
+/* Estilo principal */
+.deals-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.deals-section__text {
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+}
+
+.deals-section__text-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.deals-section__text-paragraph {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.deals-section__buy-now {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deals-section__buy-now:hover {
+    background-color: #333;
+}
+
+/* Contador */
+.countdown {
+    text-align: center;
+}
+
+.countdown__title {
+    margin-bottom: 20px;
+}
+
+.countdown__timers {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.countdown__timer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.countdown__timer-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.countdown__timer-label {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Slider de libros */
+.book-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.book-slider__book {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.book-slider__book-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-slider__book-discount {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+/* Book Grid and Pagination */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto; /* Espacio flexible para el contenido principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .deals-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deals-section__text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .countdown__timers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-slider__book {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals-section__text-title {
+        font-size: 1.5rem;
+    }
+
+    .deals-section__text-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .deals-section__buy-now {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .countdown__timer-value {
+        font-size: 1.5rem;
+    }
+
+    .countdown__timer-label {
+        font-size: 0.8rem;
+    }
+}

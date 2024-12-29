@@ -1,0 +1,50 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.landing__cta-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.landing__cta-button:hover {
+  background-color: #555;
+}
+
+.landing__columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  width: 100%;
+  flex-grow: 1; /* Ensure the columns take up the remaining space */
+}
+
+.landing__column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__column img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.landing__column--center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
